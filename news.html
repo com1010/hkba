@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>News — 香港區塊鏈協會 HKBA</title>
+<meta name="description" content="HKBA 新聞與媒體報導 News and media." />
+<meta property="og:title" content="News — 香港區塊鏈協會 HKBA" />
+<meta property="og:description" content="HKBA 新聞與媒體報導 News and media." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://hkba.net/" />
+<meta property="og:image" content="https://hkba.net/assets/img/logo.png" />
+<meta property="og:site_name" content="Hong Kong Blockchain Association 香港區塊鏈協會" />
+<link rel="canonical" href="https://hkba.net/" />
+<link rel="icon" type="image/png" href="assets/img/logo.png" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo.png" alt="HKBA logo" />
+      <span class="t">HKBA 香港區塊鏈協會<small>Hong Kong Blockchain Association</small></span>
+    </a>
+    <button class="nav-toggle" onclick="document.querySelector('nav.main').classList.toggle('open')">☰ Menu</button>
+    <nav class="main"><a href="index.html">Home 主頁</a><a href="leadership.html">Leadership 團隊</a><a href="events.html">Events 活動</a><a href="speech.html">Speech 演講</a><a href="web3listing-guide.html">Web3 Guide</a><a href="news.html" class="on">News</a></nav>
+  </div>
+</header>
+
+<section class="page-head"><div class="wrap"><h1>News 新聞</h1></div></section>
+<section class="section"><div class="wrap"><article class="article">
+  <div class="note">原站的新聞頁為協會會員專區內容（Google Drive 文件，需登錄查看）。請前往原站查看，或聯繫協會獲取權限。</div>
+  <p><a class="btn btn-solid" href="https://sites.google.com/view/hongkongblockchain/news" target="_blank" rel="noopener">前往查看 →</a></p>
+  <p>如需在本站發布新聞稿或 Web3 項目名錄，請聯繫 <a href="mailto:info@HKBA.club">info@HKBA.club</a>。</p>
+</article></div></section>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div>© 2026 Hong Kong Blockchain Association 香港區塊鏈協會 · hkba.net · HKBA.club · HongKongBlockchain.org</div>
+    <div class="cols">
+      <a href="https://x.com/HKBAclub">X.com/HKBAclub</a>
+      <a href="https://facebook.com/HongKongBA">Facebook</a>
+      <a href="https://www.youtube.com/@HongKongBlockchain">YouTube</a>
+      <a href="https://t.me/HKBAclub">Telegram</a>
+      <a href="https://www.linkedin.com/company/hongkongblockchain">LinkedIn</a>
+      <a href="https://linktr.ee/HKBA">Linktr.ee</a>
+    </div>
+  </div>
+</footer>
+<script>
+document.addEventListener('click', e => {{
+  if (!e.target.closest('.site-head')) document.querySelector('nav.main')?.classList.remove('open');
+}});
+</script>
+</body>
+</html>
