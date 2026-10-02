@@ -160,3 +160,16 @@ footer.site-foot .cols { display: flex; gap: 18px; flex-wrap: wrap; }
 .faq { background: var(--card, #fff); border: 1px solid rgba(0,0,0,.08); border-radius: 12px; padding: 18px 22px; }
 .faq h3 { margin: 0 0 8px; font-size: 1.05rem; }
 .faq p { margin: 0; color: var(--muted, #555); line-height: 1.7; }
+
+/* Contact form */
+.contact-form { max-width: 720px; margin: 0 auto; display: grid; gap: 16px; }
+.contact-form label { display: grid; gap: 6px; font-weight: 600; font-size: .95rem; }
+.contact-form input, .contact-form textarea {
+  font: inherit; padding: 12px 14px; border: 1px solid rgba(0,0,0,.15);
+  border-radius: 8px; background: #fff; width: 100%;
+}
+.contact-form input:focus, .contact-form textarea:focus { outline: 2px solid var(--brand, #1652f0); border-color: transparent; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 640px) { .form-row { grid-template-columns: 1fr; } }
+.contact-form .btn { justify-self: start; cursor: pointer; }
+.form-ok { color: #0a7d33; font-weight: 600; margin: 0; }
